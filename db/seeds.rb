@@ -43,6 +43,17 @@ puts "🐕 Seeding data..."
     country: locations.sample
   )
 end
+
+mwaniki =  User.create(
+  email: "mwaniki@gmail.com",
+  password: "password",
+  is_admin: true,
+  first_name: "Dennis",
+  last_name: "Mwaniki",
+  address: "P.O. Box 10-10100, Nairobi",
+  country: "Kenya"
+)
+
 # Shipment
 10.times do
   shipment = Shipment.create(
@@ -79,6 +90,7 @@ end
       is_received: false
     )
   end
+  
 
 end
 
