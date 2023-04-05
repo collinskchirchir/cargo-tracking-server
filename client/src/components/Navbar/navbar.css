@@ -1,0 +1,7 @@
+.navlink {
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    font-size: large;
+}
