@@ -26,7 +26,6 @@ export default function AdminDash() {
         container_size_in_feet: "",
         status: "",
     })
-
     const indexOfLastShipment = currentPage * shipmentsPerPage //5
     const indexOfFirstShipment = indexOfLastShipment - shipmentsPerPage //0
     const currentShipments = shipments.slice(indexOfFirstShipment , indexOfLastShipment)
@@ -48,7 +47,6 @@ export default function AdminDash() {
         })
     }
     function handleSubmit(){
-        console.log(formData);
         fetch('/shipments', {
             method: 'POST',
             headers: {
@@ -57,7 +55,8 @@ export default function AdminDash() {
             },
             body: JSON.stringify(formData)
         })
-        setShipmentsArr([...shipments, formData])
+         .then(r => r.json())
+         .then((data) =>setShipmentsArr([...shipments, data]))
     }
 
     function handleDelete(id){
@@ -180,7 +179,7 @@ export default function AdminDash() {
                                 </td>
                                 <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                                     <Link to={`/shipment/${shipment.id}`} className="text-indigo-600 hover:text-indigo-900">
-                                    Edit
+                                    View
                                     </Link>
                                 </td>
                                 <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
