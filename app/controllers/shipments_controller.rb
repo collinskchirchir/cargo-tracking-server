@@ -35,7 +35,7 @@ class ShipmentsController < ApplicationController
   end
 
   def find_shipment
-    Shipment.find_by!(id: params[:id])
+    Shipment.find_by(id: params[:id])
   end
 
   def render_not_found_response
