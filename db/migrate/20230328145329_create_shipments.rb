@@ -6,9 +6,8 @@ class CreateShipments < ActiveRecord::Migration[6.1]
       t.string :departure
       t.string :arrival
       t.string :rate_per_cbm
-      t.boolean :has_shipped, null: false, default: false
-      t.boolean :has_landed, null: false, default: false
-      t.text :container_size
+      t.string :status
+      t.integer :container_size_in_feet
 
       t.timestamps
     end
