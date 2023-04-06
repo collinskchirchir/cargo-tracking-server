@@ -98,7 +98,7 @@ export default function Example() {
               <BsTelephone/>  <span className='px-2'>+254 756 234954</span>
             </p>
             <p className="flex items-center leading-6 text-gray-600">
-              <AiOutlineMail/> <span className='px-2'>Superfire@gmail.com</span>
+              <AiOutlineMail/> <span className='px-2'>cargotracking@gmail.com</span>
             </p>
             <p className="flex items-center leading-6 text-gray-600">
               <MdOutlineLocationOn/> <span className='px-2'>Mugathi Street, Avenue Rd. Mombasa, Kenya</span>
@@ -168,7 +168,7 @@ export default function Example() {
           </div>
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+          <p className="text-xs leading-5 text-gray-500">&copy; 2023 Cargo Flow Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

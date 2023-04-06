@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import  Carousel  from 'react-bootstrap/Carousel';
 import './home.css'
-import { PaperClipIcon, ChatBubbleBottomCenterIcon, CalendarDaysIcon, XCircleIcon } from '@heroicons/react/20/solid'
+import { ChatBubbleBottomCenterIcon, CalendarDaysIcon, XCircleIcon } from '@heroicons/react/20/solid'
 
 function Home() {
   const [formData, setFormData] = useState({
